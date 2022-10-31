@@ -1,0 +1,30 @@
+body {
+    background: var(--bg-dark);
+}
+
+.container {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    // background: rgba(255, 255, 255, 0.3);  // 확인용 임시값
+}
+
+// cont__title
+.cont__title {
+    padding: 14vmax 0;
+    font-size: 80px;
+    // font-size: 6vmax;
+    font-family: var(--font-main);
+    color: var(--white);
+    line-height: 1;
+    text-transform: uppercase;
+
+    strong {
+        display: block;   // 줄바꿈을 위함
+    }
+}
+
+// cont__contact
+.cont__contact {
+
+}
