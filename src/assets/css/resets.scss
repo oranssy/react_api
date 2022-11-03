@@ -12,6 +12,9 @@
     --font-main: "SaolDisplay-Regular";
     --font-sub1: "PlayfairDisplay-Regular";
     --font-sub2: "Rajdhani-Display";
+    --font-kor1: "SeoulHangang";
+    --font-kor2: "VitroPride";
+    --font-kor3: "AritaDotum";
   }
 
   // border-box 초기화
@@ -116,7 +119,7 @@
     h4,
     h5,
     h6 {
-      font-weight: normal;
+      font-style: normal;
     }
     ul {
       list-style: none;
@@ -126,7 +129,7 @@
       font-style: normal;
     }
     strong {
-      font-weight: normal;
+      font-style: normal;
     }
     img {
       vertical-align: top;

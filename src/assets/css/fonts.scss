@@ -81,3 +81,119 @@
          url("../fonts/Rajdhani-SemiBold.ttf") format("truetype");
     font-display: swap;
   }
+
+   @font-face {
+     font-family: 'SeoulHangang';
+     font-weight: 300;
+     font-style: normal;
+     src: url('https://cdn.jsdelivr.net/gh/webfontworld/seoulhangang/SeoulHangangLight.eot');
+     src: url('https://cdn.jsdelivr.net/gh/webfontworld/seoulhangang/SeoulHangangLight.eot?#iefix') format('embedded-opentype'),
+         url('https://cdn.jsdelivr.net/gh/webfontworld/seoulhangang/SeoulHangangLight.woff2') format('woff2'),
+         url('https://cdn.jsdelivr.net/gh/webfontworld/seoulhangang/SeoulHangangLight.woff') format('woff'),
+         url('https://cdn.jsdelivr.net/gh/webfontworld/seoulhangang/SeoulHangangLight.ttf') format("truetype");
+     font-display: swap;
+ }
+ 
+ @font-face {
+     font-family: 'SeoulHangang';
+     font-weight: 500;
+     font-style: normal;
+     src: url('https://cdn.jsdelivr.net/gh/webfontworld/seoulhangang/SeoulHangangMedium.eot');
+     src: url('https://cdn.jsdelivr.net/gh/webfontworld/seoulhangang/SeoulHangangMedium.eot?#iefix') format('embedded-opentype'),
+         url('https://cdn.jsdelivr.net/gh/webfontworld/seoulhangang/SeoulHangangMedium.woff2') format('woff2'),
+         url('https://cdn.jsdelivr.net/gh/webfontworld/seoulhangang/SeoulHangangMedium.woff') format('woff'),
+         url('https://cdn.jsdelivr.net/gh/webfontworld/seoulhangang/SeoulHangangMedium.ttf') format("truetype");
+     font-display: swap;
+ }
+ 
+ @font-face {
+     font-family: 'SeoulHangang';
+     font-weight: 700;
+     font-style: normal;
+     src: url('https://cdn.jsdelivr.net/gh/webfontworld/seoulhangang/SeoulHangangBold.eot');
+     src: url('https://cdn.jsdelivr.net/gh/webfontworld/seoulhangang/SeoulHangangBold.eot?#iefix') format('embedded-opentype'),
+         url('https://cdn.jsdelivr.net/gh/webfontworld/seoulhangang/SeoulHangangBold.woff2') format('woff2'),
+         url('https://cdn.jsdelivr.net/gh/webfontworld/seoulhangang/SeoulHangangBold.woff') format('woff'),
+         url('https://cdn.jsdelivr.net/gh/webfontworld/seoulhangang/SeoulHangangBold.ttf') format("truetype");
+     font-display: swap;
+ }
+ 
+ @font-face {
+     font-family: 'SeoulHangang';
+     font-weight: 800;
+     font-style: normal;
+     src: url('https://cdn.jsdelivr.net/gh/webfontworld/seoulhangang/SeoulHangangExtraBold.eot');
+     src: url('https://cdn.jsdelivr.net/gh/webfontworld/seoulhangang/SeoulHangangExtraBold.eot?#iefix') format('embedded-opentype'),
+         url('https://cdn.jsdelivr.net/gh/webfontworld/seoulhangang/SeoulHangangExtraBold.woff2') format('woff2'),
+         url('https://cdn.jsdelivr.net/gh/webfontworld/seoulhangang/SeoulHangangExtraBold.woff') format('woff'),
+         url('https://cdn.jsdelivr.net/gh/webfontworld/seoulhangang/SeoulHangangExtraBold.ttf') format("truetype");
+     font-display: swap;
+ }
+
+ @font-face {
+     font-family: 'VitroPride';
+     font-weight: normal;
+     font-style: normal;
+     src: url('https://cdn.jsdelivr.net/gh/webfontworld/vitro/VitroPride.eot');
+     src: url('https://cdn.jsdelivr.net/gh/webfontworld/vitro/VitroPride.eot?#iefix') format('embedded-opentype'),
+         url('https://cdn.jsdelivr.net/gh/webfontworld/vitro/VitroPride.woff2') format('woff2'),
+         url('https://cdn.jsdelivr.net/gh/webfontworld/vitro/VitroPride.woff') format('woff'),
+         url('https://cdn.jsdelivr.net/gh/webfontworld/vitro/VitroPride.ttf') format("truetype");
+     font-display: swap;
+ }
+
+ @font-face {
+     font-family: 'AritaDotum';
+     font-weight: 100;
+     font-style: normal;
+     src: url('https://cdn.jsdelivr.net/gh/webfontworld/amore/AritaDotum-Thin.eot');
+     src: url('https://cdn.jsdelivr.net/gh/webfontworld/amore/AritaDotum-Thin.eot?#iefix') format('embedded-opentype'),
+         url('https://cdn.jsdelivr.net/gh/webfontworld/amore/AritaDotum-Thin.woff2') format('woff2'),
+         url('https://cdn.jsdelivr.net/gh/webfontworld/amore/AritaDotum-Thin.woff') format('woff'),
+         url('https://cdn.jsdelivr.net/gh/webfontworld/amore/AritaDotum-Thin.ttf') format("truetype");
+     font-display: swap;
+ }
+ @font-face {
+     font-family: 'AritaDotum';
+     font-weight: 300;
+     font-style: normal;
+     src: url('https://cdn.jsdelivr.net/gh/webfontworld/amore/AritaDotum-Light.eot');
+     src: url('https://cdn.jsdelivr.net/gh/webfontworld/amore/AritaDotum-Light.eot?#iefix') format('embedded-opentype'),
+         url('https://cdn.jsdelivr.net/gh/webfontworld/amore/AritaDotum-Light.woff2') format('woff2'),
+         url('https://cdn.jsdelivr.net/gh/webfontworld/amore/AritaDotum-Light.woff') format('woff'),
+         url('https://cdn.jsdelivr.net/gh/webfontworld/amore/AritaDotum-Light.ttf') format("truetype");
+     font-display: swap;
+ }
+ @font-face {
+     font-family: 'AritaDotum';
+     font-weight: 500;
+     font-style: normal;
+     src: url('https://cdn.jsdelivr.net/gh/webfontworld/amore/AritaDotum-Medium.eot');
+     src: url('https://cdn.jsdelivr.net/gh/webfontworld/amore/AritaDotum-Medium.eot?#iefix') format('embedded-opentype'),
+         url('https://cdn.jsdelivr.net/gh/webfontworld/amore/AritaDotum-Medium.woff2') format('woff2'),
+         url('https://cdn.jsdelivr.net/gh/webfontworld/amore/AritaDotum-Medium.woff') format('woff'),
+         url('https://cdn.jsdelivr.net/gh/webfontworld/amore/AritaDotum-Medium.ttf') format("truetype");
+     font-display: swap;
+ }
+ @font-face {
+     font-family: 'AritaDotum';
+     font-weight: 600;
+     font-style: normal;
+     src: url('https://cdn.jsdelivr.net/gh/webfontworld/amore/AritaDotum-SemiBold.eot');
+     src: url('https://cdn.jsdelivr.net/gh/webfontworld/amore/AritaDotum-SemiBold.eot?#iefix') format('embedded-opentype'),
+         url('https://cdn.jsdelivr.net/gh/webfontworld/amore/AritaDotum-SemiBold.woff2') format('woff2'),
+         url('https://cdn.jsdelivr.net/gh/webfontworld/amore/AritaDotum-SemiBold.woff') format('woff'),
+         url('https://cdn.jsdelivr.net/gh/webfontworld/amore/AritaDotum-SemiBold.ttf') format("truetype");
+     font-display: swap;
+ }
+ @font-face {
+     font-family: 'AritaDotum';
+     font-weight: 700;
+     font-style: normal;
+     src: url('https://cdn.jsdelivr.net/gh/webfontworld/amore/AritaDotum-Bold.eot');
+     src: url('https://cdn.jsdelivr.net/gh/webfontworld/amore/AritaDotum-Bold.eot?#iefix') format('embedded-opentype'),
+         url('https://cdn.jsdelivr.net/gh/webfontworld/amore/AritaDotum-Bold.woff2') format('woff2'),
+         url('https://cdn.jsdelivr.net/gh/webfontworld/amore/AritaDotum-Bold.woff') format('woff'),
+         url('https://cdn.jsdelivr.net/gh/webfontworld/amore/AritaDotum-Bold.ttf') format("truetype");
+     font-display: swap;
+ }
