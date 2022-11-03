@@ -26,3 +26,5 @@ const Maincont = () => {
 };
 
 export default Maincont;
+
+// map 인자값으로 idx를 넣어줘야 오루나지 않음!!
