@@ -16,12 +16,20 @@ const Reference = () => {
   const [references, setReferences] = useState([]);
 
   useEffect(() => {
-    fetch("https://webstoryboy.github.io/react2022/src/assets/json/refer.json")
+    fetch(
+      "https://raw.githubusercontent.com/oranssy/react_api/main/src/utils/reference.json"
+    )
       .then((response) => response.json())
-      // .then((result) => console.log(result.data.htmlRefer))
-      // .then((result) => setReferences(result.data))   // 객체
-      .then((result) => setReferences(result.data.htmlRefer)) // 배열
+      // .then((result) => console.log(result))
+      .then((result) => setReferences(result.cssRefer))
       .catch((error) => console.log("error", error));
+
+    // fetch("https://webstoryboy.github.io/react2022/src/assets/json/refer.json")
+    //   .then((response) => response.json())
+    //   // .then((result) => console.log(result.data.htmlRefer))
+    //   // .then((result) => setReferences(result.data))   // 객체
+    //   .then((result) => setReferences(result.data.htmlRefer)) // 배열
+    //   .catch((error) => console.log("error", error));
   }, []);
 
   return (

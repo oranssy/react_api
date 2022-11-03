@@ -1,12 +1,15 @@
 // import { info } from "node-sass";
 import React from "react";
 
-const ReferText = ({ id, title, desc }) => {
+const ReferText = ({ num, title, desc, desc2, value, use }) => {
   return (
     <li>
-      <span>{id}</span>
+      <span>{num}</span>
       <span>{title}</span>
       <span>{desc}</span>
+      <span>{desc2}</span>
+      <span>{value}</span>
+      <span>{use}</span>
     </li>
   );
 };
@@ -47,10 +50,12 @@ const ReferCont = ({ references }) => {
             {references.map((refer, idx) => (
               <ReferText
                 key={idx}
-                id={refer.id}
+                num={refer.num}
                 title={refer.title}
                 desc={refer.desc}
                 desc2={refer.desc2}
+                value={refer.value}
+                use={refer.use}
               />
             ))}
           </ul>
