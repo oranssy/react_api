@@ -1,4 +1,9 @@
 import React from "react";
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css";
+import "swiper/css/pagination";
+
+import { Autoplay, Pagination } from "swiper";
 
 function PopularList(props) {
   return (
@@ -26,13 +31,29 @@ const MovieList = (props) => {
       <h2>Popular Movies</h2>
       <div className="container">
         <div className="list__inner">
-          <ul>
+          <Swiper
+            slidesPerView={3}
+            spaceBetween={30}
+            pagination={{
+              clickable: true,
+            }}
+            autoplay={{
+              delay: 1500,
+              disableOnInteraction: false,
+            }}
+            modules={[Autoplay, Pagination]}
+            className="mySwiper"
+          >
+            {/* <ul> */}
             {props.popularity.map((popularity, index) =>
-              index < 5 ? (
-                <PopularList key={index} popular={popularity} index={index} />
+              index < 10 ? (
+                <SwiperSlide key={index}>
+                  <PopularList key={index} popular={popularity} index={index} />
+                </SwiperSlide>
               ) : null
             )}
-          </ul>
+            {/* </ul> */}
+          </Swiper>
         </div>
       </div>
     </section>
