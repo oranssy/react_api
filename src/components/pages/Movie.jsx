@@ -27,7 +27,7 @@ const Movie = () => {
   }, []);
 
   // 검색은 클릭했을 때만 불러옴 (js 방식)
-  const search = (query) => {
+  const search = async (query) => {
     fetch(
       `https://api.themoviedb.org/3/search/movie?api_key=1ea57f2063af5c274ebfea0573b7df9a&query=${query}`
     )

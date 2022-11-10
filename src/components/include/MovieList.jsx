@@ -1,9 +1,10 @@
 import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
+import "swiper/css/effect-coverflow";
 import "swiper/css/pagination";
 
-import { Autoplay, Pagination } from "swiper";
+import { EffectCoverflow, Pagination, Autoplay } from "swiper";
 
 function PopularList(props) {
   return (
@@ -32,16 +33,25 @@ const MovieList = (props) => {
       <div className="container">
         <div className="list__inner">
           <Swiper
-            slidesPerView={3}
-            spaceBetween={30}
-            pagination={{
-              clickable: true,
-            }}
+            effect={"coverflow"}
+            grabCursor={true}
+            centeredSlides={true}
+            // initialSlide={"5"}  몇 번째에서 보여줄 것인지
+            spaceBetween={10}
             autoplay={{
-              delay: 1500,
+              delay: 2500,
               disableOnInteraction: false,
             }}
-            modules={[Autoplay, Pagination]}
+            slidesPerView={"auto"}
+            coverflowEffect={{
+              rotate: 50,
+              stretch: 0,
+              depth: 100,
+              modifier: 1,
+              slideShadows: true,
+            }}
+            pagination={true}
+            modules={[EffectCoverflow, Pagination, Autoplay]}
             className="mySwiper"
           >
             {/* <ul> */}
