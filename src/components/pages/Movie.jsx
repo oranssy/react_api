@@ -52,7 +52,7 @@ const Movie = () => {
     <>
       <Header />
       <Contents>
-        <Title title={["Movie", "reference API"]} />
+        <Title title={["List of movies", "using API"]} />
         <MovieList popularity={popularity} />
         <MovieSearch onSearch={search} />
         <MovieCont movies={movies} />
