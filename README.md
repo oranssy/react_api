@@ -1,4 +1,4 @@
-# Getting Started with Create React App         
+# react_api         
 
 
 ### ┌  리액트 설치  ┐        
