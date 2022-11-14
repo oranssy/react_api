@@ -1,5 +1,6 @@
 import React from "react";
 import { useState, useEffect } from "react"; // 리액트훅 선언해줌
+// import { useEffect } from "react";
 
 import Header from "../layout/Header";
 import Contents from "../layout/Contents";
@@ -9,7 +10,6 @@ import MovieSearch from "../include/MovieSearch";
 import MovieCont from "../include/MovieCont";
 import Contact from "../layout/Contact";
 import Footer from "../layout/Footer";
-// import { useEffect } from "react";
 
 const Movie = () => {
   const [popularity, setPopularity] = useState([]);
@@ -26,7 +26,7 @@ const Movie = () => {
       .catch((error) => console.log(error));
   }, []);
 
-  // 검색은 클릭했을 때만 불러옴 (js 방식)
+  // 검색 정보 불러오기 (클릭했을 때만 불러옴_ JS 방식)
   const search = async (query) => {
     fetch(
       `https://api.themoviedb.org/3/search/movie?api_key=1ea57f2063af5c274ebfea0573b7df9a&query=${query}`

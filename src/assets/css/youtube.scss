@@ -1,0 +1,122 @@
+영상 슬라이더 #youtube__list {
+  width: 70%;
+  height: 740px;
+  overflow: hidden;
+
+  h2 {
+    color: var(--white);
+    margin-bottom: 5px;
+    padding: 0 18%;
+  }
+
+  .container {
+    margin-bottom: 30px;
+  }
+
+  .youtubeList__inner {
+    // width: 100%;
+    // padding: 5%;
+
+    // ul {
+    //   display: flex;
+    //   flex-wrap: wrap;
+    //   justify-content: space-between;
+    // }
+
+    li {
+      // justify-content: space-between;
+      // width: 30%;
+      text-align: center;
+      padding: 16px;
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      position: relative;
+      // margin-right: 15px;
+      transition: transform 0.2s ease;
+      margin-bottom: 70px;
+
+      a {
+        img {
+          width: 30%;
+        }
+      }
+    }
+  }
+}
+
+// 유튜브 영상 검색창
+#youtube__search {
+  margin-bottom: 100px;
+
+  .container {
+    position: relative;
+  }
+
+  h2 {
+    color: var(--white);
+    font-size: 40px;
+    text-indent: -9999px;
+    height: 0;
+  }
+
+  input {
+    background: #000;
+    border: 2px solid var(--white);
+    border-radius: 50px;
+    color: var(--white);
+    width: 100%;
+    padding: 10px 30px;
+    font-family: var(--font-kor3);
+  }
+
+  button {
+    position: absolute;
+    right: 6px;
+    top: 6px;
+    width: 70px;
+    height: 35px;
+    border-radius: 50px;
+    border: 0;
+    font-family: var(--font-kor3);
+    cursor: pointer;
+    z-index: 1000;
+
+    &:hover {
+      background: #101626;
+      color: var(--white);
+    }
+  }
+}
+
+// 기본 영상 정보
+#cont__youtube {
+  .youtube__inner {
+    ul {
+      column-count: 4;
+      column-gap: 20px;
+      width: 100%;
+
+      li {
+        margin-bottom: 20px;
+
+        img {
+          border-radius: 5px;
+        }
+
+        em {
+          width: 100px;
+          color: var(--white);
+          font-family: var(--font-kor3);
+
+          .title {
+            overflow: hidden;
+            text-overflow: ellipsis;
+            display: -webkit-box;
+            -webkit-line-clamp: 1;
+            -webkit-box-orient: vertical;
+            font-size: 18px;
+          }
+        }
+      }
+    }
+  }
+}

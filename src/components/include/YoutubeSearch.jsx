@@ -1,12 +1,12 @@
 import React, { useRef } from "react";
 
-const MovieSearch = ({ onSearch }) => {
+const YoutubeSearch = ({ onSearch }) => {
   const inputRef = useRef();
 
   const handleSearch = () => {
     const value = inputRef.current.value;
     onSearch(value);
-    // console.log(onSearch(value));
+    console.log(onSearch(value));
   };
 
   const onKeyPress = (event) => {
@@ -22,7 +22,7 @@ const MovieSearch = ({ onSearch }) => {
   };
 
   return (
-    <div className="movie__search">
+    <section id="youtube__search">
       <div className="container">
         <h2>검색하기</h2>
         <input
@@ -35,10 +35,10 @@ const MovieSearch = ({ onSearch }) => {
           검색
         </button>
       </div>
-    </div>
+    </section>
   );
 };
 
-export default MovieSearch;
+export default YoutubeSearch;
 
 // ref={inputRef}
