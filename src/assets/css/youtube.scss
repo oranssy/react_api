@@ -81,7 +81,8 @@
     z-index: 1000;
 
     &:hover {
-      background: #101626;
+      background: #1f2126;
+      border: 1px solid #101626;
       color: var(--white);
     }
   }

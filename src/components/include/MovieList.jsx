@@ -36,7 +36,7 @@ const MovieList = (props) => {
             effect={"coverflow"}
             grabCursor={true}
             centeredSlides={true}
-            // initialSlide={"5"}  몇 번째에서 보여줄 것인지
+            initialSlide={"3"} // 몇 번째에서 보여줄 것인지
             spaceBetween={10}
             autoplay={{
               delay: 2500,

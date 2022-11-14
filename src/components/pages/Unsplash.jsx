@@ -6,7 +6,6 @@ import Contents from "../layout/Contents";
 import Footer from "../layout/Footer";
 import Title from "../layout/Title";
 import UnsplashSlider from "../include/UnsplashSlider";
-import UnsplashSelect from "../include/UnsplashSelect";
 import UnsplashSearch from "../include/UnsplashSearch";
 import UnsplashBtn from "../include/UnsplashBtn";
 import UnsplashCont from "../include/UnsplashCont";
@@ -53,9 +52,8 @@ const Unsplash = () => {
       <Contents>
         <Title title={["Unsplash list", "using API"]} />
         <UnsplashSlider randoms={randoms} />
-        <UnsplashSelect />
         <UnsplashSearch onSearch={search} />
-        <UnsplashBtn />
+        <UnsplashBtn onSearch={search} />
         <UnsplashCont images={images} />
         <Contact />
       </Contents>

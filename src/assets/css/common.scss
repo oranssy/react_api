@@ -11,7 +11,7 @@ body {
 
 // cont__title
 .cont__title {
-  padding: 14vmax 0;
+  padding: 12vmax 0;
   font-size: 80px;
   font-family: var(--font-main);
   color: var(--white);
@@ -42,10 +42,11 @@ body {
   }
 
   h3 {
-    font-size: 9vw;
+    font-size: 7vw;
     font-family: var(--font-main);
-    line-height: 1;
+    line-height: 1.2;
     text-align: center;
+    margin-bottom: 20px;
 
     em {
       display: block;
