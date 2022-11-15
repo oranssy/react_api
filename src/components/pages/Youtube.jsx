@@ -7,21 +7,22 @@ import Footer from "../layout/Footer";
 import Title from "../layout/Title";
 import YoutubeSlider from "../include/YoutubeSlider";
 import YoutubeSearch from "../include/YoutubeSearch";
+import YoutubeBtn from "../include/YoutubeBtn";
 import YoutubeCont from "../include/YoutubeCont";
 import Contact from "../layout/Contact";
 
 const Youtube = () => {
-  const [nationalGeo, setnationalGeo] = useState([]);
+  const [youtubeVideo, setyoutubeVideo] = useState([]);
   const [youtubes, setYoutubes] = useState([]);
 
-  // National Geographic 불러오기
+  // youtubeVideo 불러오기
   useEffect(() => {
     fetch(
-      `https://youtube.googleapis.com/youtube/v3/search?part=snippet&q=national+geographic&key=AIzaSyDxdr8fukvH3_B8OARtEtTtV79gAomnIBA&maxResults=10&type=video`
+      `https://youtube.googleapis.com/youtube/v3/search?part=snippet&q=the+fitness+marshall&key=AIzaSyDxdr8fukvH3_B8OARtEtTtV79gAomnIBA&maxResults=10&type=video`
     )
       .then((response) => response.json())
       // .then((result) => console.log(result))
-      .then((result) => setnationalGeo(result.items))
+      .then((result) => setyoutubeVideo(result.items))
       .catch((error) => console.log(error));
   }, []);
 
@@ -39,7 +40,7 @@ const Youtube = () => {
   // 유튜브 정보 불러오기
   useEffect(() => {
     fetch(
-      "https://youtube.googleapis.com/youtube/v3/search?part=snippet&q=discovery&key=AIzaSyDxdr8fukvH3_B8OARtEtTtV79gAomnIBA&maxResults=20&type=video"
+      "https://youtube.googleapis.com/youtube/v3/search?part=snippet&q=1million+dance+studio&key=AIzaSyDxdr8fukvH3_B8OARtEtTtV79gAomnIBA&maxResults=10&type=video"
     )
       .then((response) => response.json())
       // .then((result) => console.log(result))
@@ -52,8 +53,9 @@ const Youtube = () => {
       <Header />
       <Contents>
         <Title title={["List of YouTube", "using API"]} />
-        <YoutubeSlider nationalGeo={nationalGeo} />
+        <YoutubeSlider youtubeVideo={youtubeVideo} />
         <YoutubeSearch onSearch={search} />
+        <YoutubeBtn onSearch={search} />
         <YoutubeCont youtubes={youtubes} />
         <Contact />
       </Contents>

@@ -102,9 +102,9 @@
   }
 }
 
-// 검색창
+// 영화 검색창
 .movie__search {
-  margin-bottom: 100px;
+  margin-bottom: 20px;
 
   .container {
     position: relative;
@@ -147,7 +147,35 @@
   }
 }
 
-// 기본 정보
+// 기본 영화정보 버튼
+.movie__btn {
+  margin-bottom: 50px;
+
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0 300px;
+
+    button {
+      padding: 5px 16px;
+      border-radius: 50px;
+      font-family: var(--font-kor2);
+      font-weight: bold;
+      font-size: 16px;
+      color: #101626;
+      cursor: pointer;
+
+      &:hover {
+        background: #101626;
+        border: 1px solid #383838;
+        color: var(--white);
+      }
+    }
+  }
+}
+
+// 기본 영화정보 목록
 .movie__inner {
   ul {
     display: flex;

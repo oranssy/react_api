@@ -6,18 +6,18 @@ import "swiper/css/pagination";
 
 import { Autoplay, EffectCube, Pagination } from "swiper";
 
-function NationalGeoList(props) {
+function YvideoList(props) {
   return (
     <li>
       <a
-        href={`https://www.youtube.com/watch?v=${props.nationalGeo.id.videoId}`}
+        href={`https://www.youtube.com/watch?v=${props.youtubeVideo.id.videoId}`}
       >
         <img
-          src={props.nationalGeo.snippet.thumbnails.high.url}
-          alt={props.nationalGeo.snippet.title}
+          src={props.youtubeVideo.snippet.thumbnails.high.url}
+          alt={props.youtubeVideo.snippet.title}
         />
         <em>
-          <span className="title">{props.nationalGeo.snippet.title}</span>
+          <span className="title">{props.youtubeVideo.snippet.title}</span>
         </em>
       </a>
     </li>
@@ -25,11 +25,11 @@ function NationalGeoList(props) {
 }
 
 const YoutubeList = (props) => {
-  // console.log(nationalGeo);
+  // console.log(youtubeVideo);
 
   return (
     <section id="youtube__list">
-      <h2>National Geographic Video</h2>
+      <h2>Exciting</h2>
       <div className="container">
         <div className="youtubeList__inner">
           <Swiper
@@ -52,12 +52,12 @@ const YoutubeList = (props) => {
             className="mySwiper"
           >
             {/* <ul> */}
-            {props.nationalGeo.map((nationalGeo, index) =>
+            {props.youtubeVideo.map((youtubeVideo, index) =>
               index < 10 ? (
                 <SwiperSlide key={index}>
-                  <NationalGeoList
+                  <YvideoList
                     key={index}
-                    nationalGeo={nationalGeo}
+                    youtubeVideo={youtubeVideo}
                     index={index}
                   />
                 </SwiperSlide>
