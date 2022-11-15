@@ -29,7 +29,7 @@ const Youtube = () => {
   // 검색 정보 불러오기 (클릭했을 때만 불러옴_ JS 방식)
   const search = async (query) => {
     fetch(
-      `https://youtube.googleapis.com/youtube/v3/search?part=snippet&q=${query}&key=AIzaSyDxdr8fukvH3_B8OARtEtTtV79gAomnIBA&maxResults=32&type=video`
+      `https://youtube.googleapis.com/youtube/v3/search?part=snippet&q=${query}&key=AIzaSyDxdr8fukvH3_B8OARtEtTtV79gAomnIBA&maxResults=24&type=video`
     )
       .then((response) => response.json())
       // .then((result) => console.log(result))
@@ -40,7 +40,7 @@ const Youtube = () => {
   // 유튜브 정보 불러오기
   useEffect(() => {
     fetch(
-      "https://youtube.googleapis.com/youtube/v3/search?part=snippet&q=1million+dance+studio&key=AIzaSyDxdr8fukvH3_B8OARtEtTtV79gAomnIBA&maxResults=10&type=video"
+      "https://youtube.googleapis.com/youtube/v3/search?part=snippet&q=1million+dance+studio&key=AIzaSyDxdr8fukvH3_B8OARtEtTtV79gAomnIBA&maxResults=24&type=video"
     )
       .then((response) => response.json())
       // .then((result) => console.log(result))

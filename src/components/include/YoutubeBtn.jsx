@@ -22,22 +22,18 @@ const YoutubeBtn = ({ onSearch }) => {
   };
 
   const onClick6 = () => {
-    onSearch("Adele");
-  };
-
-  const onClick7 = () => {
     onSearch("Winona Oak");
   };
 
-  const onClick8 = () => {
+  const onClick7 = () => {
     onSearch("Hailee Steinfeld");
   };
 
-  const onClick9 = () => {
+  const onClick8 = () => {
     onSearch("Dua Lipa");
   };
 
-  const onClick10 = () => {
+  const onClick9 = () => {
     onSearch("OneRepublic");
   };
 
@@ -60,18 +56,15 @@ const YoutubeBtn = ({ onSearch }) => {
           Charlie Puth
         </button>
         <button type="submit" onClick={onClick6}>
-          Adele
-        </button>
-        <button type="submit" onClick={onClick7}>
           Winona Oak
         </button>
-        <button type="submit" onClick={onClick8}>
+        <button type="submit" onClick={onClick7}>
           Hailee Steinfeld
         </button>
-        <button type="submit" onClick={onClick9}>
+        <button type="submit" onClick={onClick8}>
           Dua Lipa
         </button>
-        <button type="submit" onClick={onClick10}>
+        <button type="submit" onClick={onClick9}>
           OneRepublic
         </button>
       </div>
