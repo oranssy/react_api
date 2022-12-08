@@ -19,7 +19,7 @@ function ImgList(props) {
 }
 
 const UnsplashSlider = (props) => {
-  // console.log(nationalGeo)
+  // console.log(randoms)
 
   return (
     <section id="unsplash__list">

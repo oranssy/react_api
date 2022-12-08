@@ -6,11 +6,11 @@ const YoutubeBtn = ({ onSearch }) => {
   };
 
   const onClick2 = () => {
-    onSearch("billboard hot 100");
+    onSearch("OneRepublic");
   };
 
   const onClick3 = () => {
-    onSearch("TurningPoint Music");
+    onSearch("Charlie Puth");
   };
 
   const onClick4 = () => {
@@ -18,23 +18,19 @@ const YoutubeBtn = ({ onSearch }) => {
   };
 
   const onClick5 = () => {
-    onSearch("Charlie Puth");
+    onSearch("Katy Perry");
   };
 
   const onClick6 = () => {
-    onSearch("Winona Oak");
+    onSearch("The Chainsmokers");
   };
 
   const onClick7 = () => {
-    onSearch("Hailee Steinfeld");
+    onSearch("Clean Bandit");
   };
 
   const onClick8 = () => {
-    onSearch("Dua Lipa");
-  };
-
-  const onClick9 = () => {
-    onSearch("OneRepublic");
+    onSearch("Pentatonix");
   };
 
   return (
@@ -44,28 +40,25 @@ const YoutubeBtn = ({ onSearch }) => {
           Webstoryboy
         </button>
         <button type="submit" onClick={onClick2}>
-          billboard hot 100
+          OneRepublic
         </button>
         <button type="submit" onClick={onClick3}>
-          TurningPoint Music
+          Charlie Puth
         </button>
         <button type="submit" onClick={onClick4}>
           Ed Sheeran
         </button>
         <button type="submit" onClick={onClick5}>
-          Charlie Puth
+          Katy Perry
         </button>
         <button type="submit" onClick={onClick6}>
-          Winona Oak
+          The Chainsmokers
         </button>
         <button type="submit" onClick={onClick7}>
-          Hailee Steinfeld
+          Clean Bandit
         </button>
         <button type="submit" onClick={onClick8}>
-          Dua Lipa
-        </button>
-        <button type="submit" onClick={onClick9}>
-          OneRepublic
+          Pentatonix
         </button>
       </div>
     </div>

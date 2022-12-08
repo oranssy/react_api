@@ -22,7 +22,7 @@ function MovieItem(props) {
 const MovieCont = (props) => {
   // console.log(movies);
   return (
-    <section id="cont__movie">
+    <div className="cont__movie">
       <div className="container">
         <div className="movie__inner">
           <ul>
@@ -32,7 +32,7 @@ const MovieCont = (props) => {
           </ul>
         </div>
       </div>
-    </section>
+    </div>
   );
 };
 

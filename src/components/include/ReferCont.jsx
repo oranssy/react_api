@@ -180,9 +180,9 @@ const ReferCont = ({ references }) => {
               <ReferText
                 key={idx}
                 num={refer.num}
-                category={refer.category}
                 title={refer.title}
                 desc={refer.desc}
+                category={refer.category}
                 use={refer.use}
               />
             ))}
